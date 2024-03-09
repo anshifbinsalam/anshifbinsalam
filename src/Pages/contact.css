@@ -1,0 +1,211 @@
+.outer-box-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.inner-box-contact {
+    --b: 25px;   /* thickness of the border */
+    --w: 20rem;  /* width of border */
+    border: var(--b) solid #ffffff00; /* space for the border */
+    --_g: #ffffff00 90deg, var(--grad-1) 0%, var(--grad-2) 100%;
+    --_p: var(--w) var(--w) border-box no-repeat;
+    background:
+        conic-gradient(from 90deg  at top    var(--b) left  var(--b), var(--_g)) 0 0 / var(--_p),
+        conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--_g)) 100% 100% / var(--_p);
+    border-radius: 20px;
+    display: flex;
+    width: 95rem;
+    height: 50rem;
+    color: #ffffff;
+}
+.card {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    display: flex;
+    padding: 5px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    background-image: linear-gradient(144deg, rgb(141, 70, 120), rgb(184, 169, 76) 50%, rgb(141, 70, 120));
+    margin-right: 20px; /* Adjust the margin as needed */
+  }
+  
+  .card__content {
+    background: rgb(5, 6, 45);
+    border-radius: 17px;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .contact-cards-container {
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    margin  : 100px;
+  }
+  
+.card-title{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.card-content{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.card-button{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    align-items: center;
+    margin-left: 30%;
+    padding-right: 1.2rem;
+    line-height: normal;
+}
+.card-button:hover{
+    background-color: #1d1d20;
+    border: 1px solid #ffffff;
+    color: white;
+    cursor: pointer;
+    opacity: 1;
+
+}
+
+.arrow-icon{
+    font-size: 1rem;
+    position: relative;
+    margin-top: 1px;
+    position: absolute;
+}
+.contact-icon{
+    font-size: 5rem;
+    position: relative;
+    padding-left: 5rem;
+    padding-top: 1rem;
+
+}
+.left-section-contact {
+    flex: 1;
+    padding: 90px;
+}
+
+.contactheading {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    filter: brightness(90%);
+}
+
+.contactcard{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-left: 3px solid rgba(0, 128, 0, 0);
+    border-image: linear-gradient(rgb(184, 169, 76),rgb(141, 70, 120)) 1;
+    padding-left: 1rem;
+    height: auto;
+    width: 80%;
+    text-align: justify;
+    letter-spacing: 3px;
+    line-height: 1.5rem;
+    position: relative;
+    filter: brightness(80%);
+    margin-bottom: 2rem;
+}
+
+.back{
+    position: relative;
+    align-items: center;
+    top: 1rem;
+    left: 1rem;
+    color: #ffffff;
+}
+.back:hover{
+    color: #f8f8f8;
+    cursor: pointer;
+}
+
+.back-icon{
+    font-size: 1.5rem;
+    margin-right: -3rem;
+    margin-bottom: 1rem;
+    width: 3rem;
+    height: 3rem;
+    align-items: center;
+    position: relative;
+    border: 1px solid #ffffff;
+}
+.back-icon:hover{
+    background-color: rgb(141, 70, 120);
+    color: rgb(184, 169, 76);
+    border: 1px solid #f8f8f800;
+    border-image: linear-gradient(rgb(184, 169, 76),rgb(141, 70, 120)) 1;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .inner-box-about {
+        width: 90%;
+    }
+  
+    .left-section-about {
+        padding: 50px;
+    }
+  
+  }
+  
+  /* Media Queries for Responsive Design */
+  
+  @media only screen and (max-width: 768px) {
+    .inner-box-contact {
+        flex-direction: column; /* Change flex-direction to column-reverse */
+        width: 70%;
+        margin-top:28rem ;
+        height: auto;
+    }
+  
+    .left-section-contact {
+        flex: 1; /* Occupy full width */
+        padding-top: 1rem;
+        padding-left: 1rem;
+        /* padding-bottom: 1rem; */
+        width: 100%; /* Occupy full width */
+    }
+  
+    .contactheading{
+        padding-top:0rem;
+        font-size: 2rem;
+    }
+    .contactcard{
+        font-size: 0.9rem;
+
+    }
+
+    .back-icon-proj {
+        font-size: 0.5rem;
+        margin-right: -2.5rem;
+        margin-bottom: 1rem;
+        width: 2rem;
+        height: 2rem;
+        border: 1px solid #ffffff;
+        margin-left: -9rem;
+      }
+    .contact-cards-container {
+        display: flex;
+        /* justify-content: space-between; */
+        flex-direction: column;
+        /* margin  : 100px; */
+        margin-left: 5%;
+        margin-bottom: 1rem;
+      }
+      .card{
+        margin-bottom: 2rem;
+      }
+  }

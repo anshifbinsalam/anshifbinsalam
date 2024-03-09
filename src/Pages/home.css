@@ -1,0 +1,303 @@
+/* BoxComponent.css */
+
+:root {
+    background-color: #1d1d20;
+    --grad-1: rgb(141, 70, 120);
+    --grad-2: rgb(184, 169, 76);
+}
+
+.outer-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.inner-box {
+    --b: 25px;   /* thickness of the border */
+    --w: 20rem;  /* width of border */
+    border: var(--b) solid #ffffff00; /* space for the border */
+    --_g: #ffffff00 90deg, var(--grad-1) 0%, var(--grad-2) 100%;
+    --_p: var(--w) var(--w) border-box no-repeat;
+    background:
+        conic-gradient(from 90deg  at top    var(--b) left  var(--b), var(--_g)) 0 0 / var(--_p),
+        conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--_g)) 100% 100% / var(--_p);
+    border-radius: 20px;
+    display: flex;
+    width: 95rem;
+    height: 50rem;
+    color: #ffffff;
+}
+
+.left-section {
+    flex: 1;
+    padding: 100px;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+    flex: 0.5;
+    height: 50rem;
+    color: #ffffff;
+}
+
+.menu-box {
+    --b: 10px;   /* thickness of the border */
+    --w: 5rem;  /* width of border */
+    border: var(--b) solid #ffffff00; /* space for the border */
+    --_g: #ffffff00 90deg, var(--grad-1) 0%, var(--grad-2) 100%;
+    --_p: var(--w) var(--w) border-box no-repeat;
+    background:
+        conic-gradient(from 90deg  at top    var(--b) left  var(--b), var(--_g)) 0 0 / var(--_p);
+    border-radius: 10px;
+    border-image-slice: 1;
+    padding: 2rem;
+    
+    /* Adjust position to be inside the inner box */
+    position: relative;
+    left: calc(-1 * var(--b));
+    top: calc(-1 * var(--b));
+}
+
+.menu-box h3 {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+.snip1241 {
+    font-family: 'Raleway', Arial, sans-serif;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 10px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+.snip1241 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1241 li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0.5em 1em;
+  padding: 15px;
+  margin-bottom: 8px;
+}
+.snip1241 a {
+  padding: 0.5em 0.8em;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  text-decoration: none;
+}
+.snip1241 a:before,
+.snip1241 a:after {
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  opacity: 0;
+}
+.snip1241 a:before {
+  right: 0;
+  top: 0;
+  border-right: 3px solid rgba(184, 170, 76, 0);
+  /* background: linear-gradient(rgb(184, 169, 76),rgb(141, 70, 120)) ; */
+  border-top: 3px solid rgba(141, 70, 120, 0);
+  border-image: linear-gradient(rgb(184, 169, 76),rgb(141, 70, 120)) 1;
+  -webkit-transform: translate(-100%, 50%);
+  transform: translate(-100%, 50%);
+  border-radius: 10%;
+}
+.snip1241 a:after {
+  left: 0;
+  bottom: 0;
+  border-left: 3px solid rgba(184, 170, 76, 0);
+  border-bottom: 3px solid rgba(141, 70, 120, 0);
+  border-image: linear-gradient(rgb(184, 169, 76),rgb(141, 70, 120)) 1;
+  -webkit-transform: translate(100%, -50%);
+  transform: translate(100%, -50%);
+  border-radius: 10%;
+}
+.snip1241 a:hover,
+.snip1241 .current a {
+  color: #ffffff;
+}
+.snip1241 a:hover:before,
+.snip1241 .current a:before,
+.snip1241 a:hover:after,
+.snip1241 .current a:after {
+  -webkit-transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
+  opacity: 1;
+}
+
+
+/* Welcome Animation */
+
+.svgWelcome {
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+    
+  }
+  
+  #Welcome {
+    animation: paint .5s ease forwards 3s;
+      
+  }
+     
+  .letter:nth-of-type(1) {
+    stroke-dasharray: 815;
+    stroke-dashoffset: 815;
+    animation: draw 2s ease forwards;
+  }
+  
+  .letter:nth-of-type(2) {
+    stroke-dasharray: 495;
+    stroke-dashoffset: 495;
+    animation: draw 2s ease forwards .2s;
+  }
+  
+  .letter:nth-of-type(3) {
+    stroke-dasharray: 235;
+    stroke-dashoffset: 234;
+    animation: draw 2s ease forwards .4s;
+  }
+  
+  .letter:nth-of-type(4) {
+    stroke-dasharray: 355;
+    stroke-dashoffset: 355;
+    animation: draw 2s ease forwards .6s;
+  }
+  
+  .letter:nth-of-type(5) {
+    stroke-dasharray: 427;
+    stroke-dashoffset: 427;
+    animation: draw 2s ease forwards .8s;
+  }
+  
+  .letter:nth-of-type(6) {
+    stroke-dasharray: 650;
+    stroke-dashoffset: 650;
+    animation: draw 2s ease forwards 1s;
+  }
+  
+  .letter:nth-of-type(7) {
+    stroke-dasharray: 495;
+    stroke-dashoffset: 495;
+    animation: draw 2s ease forwards 1.2s;   
+  }
+  
+  
+  @keyframes draw {
+    to { stroke-dashoffset: 0; }
+  }   
+  
+  @keyframes paint {
+    from { fill: transparent; }
+    to { fill: white; }  
+  }
+  
+  /* Descritpion */
+  .Descritpion{
+    font-family: 'Raleway', Arial, sans-serif;
+    font-style: normal;
+    letter-spacing: 1px;
+    margin-top: 30%;
+    margin-left: 10%;
+    border-left: 3px solid rgba(0, 128, 0, 0);
+    border-image: linear-gradient(rgb(184, 169, 76),rgb(141, 70, 120)) 1;
+    padding-left: 1rem;
+    height: auto;
+    text-align: justify;
+    margin-right: 20px;
+    line-height: 2rem;
+  }
+
+  .menu{
+    font-family: 'Raleway',Arial, sans-serif;
+    letter-spacing: 5px;
+    font-weight: 500;
+  }
+
+
+  
+  
+  
+
+/* Media Queries for Responsive Design */
+
+@media only screen and (max-width: 1200px) {
+  .inner-box {
+      width: 90%;
+  }
+
+  .left-section {
+      padding: 50px;
+  }
+
+  .right-section {
+      flex: 0.7;
+  }
+  .svgWelcome {
+    display: none;
+  }
+}
+
+/* Media Queries for Responsive Design */
+
+@media only screen and (max-width: 768px) {
+  .inner-box {
+      flex-direction: column; /* Change flex-direction to column-reverse */
+      width: 70%;
+      margin-top:35rem ;
+      height: auto;
+  }
+
+  .left-section,
+  .right-section {
+      flex: 1; /* Occupy full width */
+      padding-top: 3rem;
+      padding-left: 0px;
+      width: 100%; /* Occupy full width */
+  }
+
+  .menu-box {
+      padding: 1rem;
+  }
+
+  .Descritpion {
+      margin-top: 0%;
+  }
+  .svgWelcome {
+    display: none;
+  }
+}
+
