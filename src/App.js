@@ -1,10 +1,15 @@
 // Filename - App.js
-// import "./App.css"
+import "./App.css"
 import '@fortawesome/fontawesome-free/css/all.css';
 
 
 import React from "react";
 // import Navbar from "./components/Navbar";
+// import {
+// 	BrowserRouter as 
+// 	Routes,
+// 	Route,
+// } from "react-router-dom";
 import {
 	BrowserRouter as Router,
 	Routes,
@@ -17,8 +22,8 @@ import Contact from "./Pages/contact";
 
 function App() {
 	return (
+		<div className='App'>
 		<Router>
-			{/* <Navbar /> */}
 			<Routes>
 				<Route exact path="/" element={<Home />} />
 				<Route path="/about" element={<About />} />
@@ -29,6 +34,7 @@ function App() {
 				<Route path="/project" element={<Project />} />
 			</Routes>
 		</Router>
+		</div>
 	);
 }
 
