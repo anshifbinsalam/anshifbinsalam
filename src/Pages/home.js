@@ -1,6 +1,7 @@
 // BoxComponent.js
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './home.css';
 
 const Home = () => {
@@ -39,9 +40,9 @@ const Home = () => {
           <div className="menu-box">
             <h3 className='Menu'>Quick Links</h3>
             <ul className='snip1241'>
-              <li><a href="/about">About</a></li>
-              <li><a href="/project">Project</a></li>
-              <li><a href="/contact">Contact</a></li>
+              <li><Link to="/about">About</Link></li>
+              <li><Link to="/project">Project</Link></li>
+              <li><Link to="/contact">Contact</Link></li>
             </ul>
           </div>
         </div>

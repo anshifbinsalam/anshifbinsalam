@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./project.css";
 import { IoArrowBackSharp } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 
 const Project = () => {
@@ -121,33 +122,33 @@ const Project = () => {
               <h3 className="menu-proj">PROJECTS</h3>
               <ul className="snip1241-proj">
                 <li>
-                  <a href="#!" onClick={() => handleProjectClick(1)}>
+                  <Link to="#!" onClick={() => handleProjectClick(1)}>
                       {windowSize < 768 ? (
                     <p>1.Grantha- shala</p>
                     ) : (
                    <p>1. Granthashala</p>
                     )}
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#!" onClick={() => handleProjectClick(2)}>
+                  <Link to="#!" onClick={() => handleProjectClick(2)}>
                     2.Automated Pen Tester
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#!" onClick={() => handleProjectClick(3)}>
+                  <Link to="#!" onClick={() => handleProjectClick(3)}>
                     3.Kaizen 8
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#!" onClick={() => handleProjectClick(4)}>
+                  <Link to="#!" onClick={() => handleProjectClick(4)}>
                     4.Url Analyzer
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#!" onClick={() => handleProjectClick(5)}>
+                  <Link to="#!" onClick={() => handleProjectClick(5)}>
                     5.Iliad 22
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
