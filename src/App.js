@@ -11,7 +11,7 @@ import React from "react";
 // 	Route,
 // } from "react-router-dom";
 import {
-	BrowserRouter as Router,
+	HashRouter as Router,
 	Routes,
 	Route,
 } from "react-router-dom";
