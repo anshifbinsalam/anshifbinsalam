@@ -56,7 +56,7 @@ const Contact = () => {
             <ContactCard
               title="Email"
               content="anshifsalamk@gmail.com"
-              connect="mailto:anshifsalamk@gmail.com?subject=Hello Anshif!&body=I came across your portfolio and would like to connect with you."
+              connect="mailto:anshifsalamk@gmail.com"
               icon={<IoMail size={30} className="contact-icon" />}
             />
             <ContactCard
