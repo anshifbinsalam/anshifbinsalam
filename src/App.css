@@ -1,4 +1,4 @@
-#root,.App{
-    height: 100%;
-    width: 100%;
+:root {
+    background-color: #1d1d20;
+    height: 100vh;
 }

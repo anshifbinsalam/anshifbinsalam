@@ -1,21 +1,17 @@
 /* BoxComponent.css */
 
-:root {
-    background-color: #1d1d20;
-    --grad-1: rgb(141, 70, 120);
-    --grad-2: rgb(184, 169, 76);
-}
-
 .outer-box {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0;
+    padding: 0%;
 }
 
 .inner-box {
-    --b: 25px;   /* thickness of the border */
-    --w: 20rem;  /* width of border */
+    --b: 20px;   /* thickness of the border */
+    --w: 18rem;  /* width of border */
     border: var(--b) solid #ffffff00; /* space for the border */
     --_g: #ffffff00 90deg, var(--grad-1) 0%, var(--grad-2) 100%;
     --_p: var(--w) var(--w) border-box no-repeat;
@@ -24,9 +20,10 @@
         conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--_g)) 100% 100% / var(--_p);
     border-radius: 20px;
     display: flex;
-    width: 95rem;
-    height: 50rem;
+    width: 80%;
+    height: 80%;
     color: #ffffff;
+    filter: brightness(60%);
 }
 
 .left-section {
@@ -129,7 +126,7 @@ a {
   border-right: 3px solid rgba(184, 170, 76, 0);
   /* background: linear-gradient(rgb(184, 169, 76),rgb(141, 70, 120)) ; */
   border-top: 3px solid rgba(141, 70, 120, 0);
-  border-image: linear-gradient(rgb(184, 169, 76),rgb(141, 70, 120)) 1;
+  border-image: linear-gradient(var(--grad-1), var(--grad-2)) 1;
   -webkit-transform: translate(-100%, 50%);
   transform: translate(-100%, 50%);
   border-radius: 10%;
@@ -139,7 +136,7 @@ a {
   bottom: 0;
   border-left: 3px solid rgba(184, 170, 76, 0);
   border-bottom: 3px solid rgba(141, 70, 120, 0);
-  border-image: linear-gradient(rgb(184, 169, 76),rgb(141, 70, 120)) 1;
+  border-image: linear-gradient(var(--grad-1), var(--grad-2)) 1;
   -webkit-transform: translate(100%, -50%);
   transform: translate(100%, -50%);
   border-radius: 10%;
@@ -233,7 +230,7 @@ a {
     margin-top: 30%;
     margin-left: 10%;
     border-left: 3px solid rgba(0, 128, 0, 0);
-    border-image: linear-gradient(rgb(184, 169, 76),rgb(141, 70, 120)) 1;
+    border-image: linear-gradient(var(--grad-1), var(--grad-2)) 1;
     padding-left: 1rem;
     height: auto;
     text-align: justify;
@@ -279,6 +276,8 @@ a {
       width: 70%;
       margin-top:35rem ;
       height: auto;
+      --b: 15px;   /* thickness of the border */
+    --w: 13rem; /* width of border */
   }
 
   .left-section,

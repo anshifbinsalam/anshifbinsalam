@@ -6,8 +6,8 @@
 }
 
 .inner-box-proj {
-    --b: 25px;   /* thickness of the border */
-    --w: 20rem;  /* width of border */
+    --b: 20px;   /* thickness of the border */
+    --w: 18rem;  /* width of border */
     border: var(--b) solid #ffffff00; /* space for the border */
     --_g: #ffffff00 90deg, var(--grad-1) 0%, var(--grad-2) 100%;
     --_p: var(--w) var(--w) border-box no-repeat;
@@ -16,8 +16,8 @@
         conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--_g)) 100% 100% / var(--_p);
     border-radius: 20px;
     display: flex;
-    width: 95rem;
-    height: 50rem;
+    width: 80%;
+    height: 80%;
     color: #ffffff;
 }
 
@@ -46,19 +46,19 @@
     filter: brightness(90%);
 }
 
-.projdes{
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    border-left: 3px solid rgba(0, 128, 0, 0);
-    border-image: linear-gradient(rgb(184, 169, 76),rgb(141, 70, 120)) 1;
-    padding-left: 1rem;
-    height: auto;
-    width: 60%;
-    text-align: justify;
-    letter-spacing: 3px;
-    line-height: 1.5rem;
-    filter: brightness(80%);
+.projdes {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-left: 3px solid rgba(0, 128, 0, 0);
+  border-image: linear-gradient(var(--grad-1), var(--grad-2)) 1;
+  padding-left: 1rem;
+  height: auto;
+  width: 60%;
+  text-align: justify;
+  letter-spacing: 3px;
+  line-height: 1.5rem;
+  filter: brightness(80%);
 }
 
 
@@ -184,7 +184,7 @@
   border-right: 3px solid rgba(184, 170, 76, 0);
   /* background: linear-gradient(rgb(184, 169, 76),rgb(141, 70, 120)) ; */
   border-top: 3px solid rgba(141, 70, 120, 0);
-  border-image: linear-gradient(rgb(184, 169, 76),rgb(141, 70, 120)) 1;
+  border-image: linear-gradient(var(--grad-1), var(--grad-2)) 1;
   -webkit-transform: translate(-100%, 50%);
   transform: translate(-100%, 50%);
   border-radius: 10%;
@@ -194,7 +194,7 @@
   bottom: 0;
   border-left: 3px solid rgba(184, 170, 76, 0);
   border-bottom: 3px solid rgba(141, 70, 120, 0);
-  border-image: linear-gradient(rgb(184, 169, 76),rgb(141, 70, 120)) 1;
+  border-image: linear-gradient(var(--grad-1), var(--grad-2)) 1;
   -webkit-transform: translate(100%, -50%);
   transform: translate(100%, -50%);
   border-radius: 10%;
@@ -257,6 +257,8 @@
     width: 80%; /* Adjust the width as needed */
     margin-top: 1rem; /* Adjust the margin-top as needed */
     height: auto;
+    --b: 15px;   /* thickness of the border */
+    --w: 13rem; /* width of border */
   }
   .left-section-proj {
     flex: 1; /* Occupy full width */

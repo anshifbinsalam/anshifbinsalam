@@ -6,8 +6,8 @@
 }
 
 .inner-box-about {
-    --b: 25px;   /* thickness of the border */
-    --w: 20rem;  /* width of border */
+    --b: 20px;   /* thickness of the border */
+    --w: 18rem; /* width of border */
     border: var(--b) solid #ffffff00; /* space for the border */
     --_g: #ffffff00 90deg, var(--grad-1) 0%, var(--grad-2) 100%;
     --_p: var(--w) var(--w) border-box no-repeat;
@@ -16,8 +16,8 @@
         conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--_g)) 100% 100% / var(--_p);
     border-radius: 20px;
     display: flex;
-    width: 95rem;
-    height: 50rem;
+    width: 80%;
+    height: 80%;
     color: #ffffff;
 }
 
@@ -41,7 +41,7 @@
     margin-bottom: 20px;
     font-family: Arial, Helvetica, sans-serif;
     border-left: 3px solid rgba(0, 128, 0, 0);
-    border-image: linear-gradient(rgb(184, 169, 76),rgb(141, 70, 120)) 1;
+    border-image: linear-gradient(var(--grad-1), var(--grad-2)) 1;
     padding-left: 1rem;
     height: auto;
     width: 80%;
@@ -99,7 +99,7 @@
     letter-spacing: 2px;
     border-bottom: 2px solid;
     filter: brightness(100%);
-    border-image: linear-gradient(to right, rgb(184, 169, 76),rgb(141, 70, 120)) 1;
+    border-image: linear-gradient(to right, var(--grad-2),var(--grad-1)) 1;
 }
 
 .Dwnload:hover{
@@ -127,9 +127,12 @@
     .inner-box-about {
         flex-direction: column; /* Change flex-direction to column-reverse */
         width: 70%;
-        margin-top:25rem ;
+        margin-top: 15rem ;
         height: auto;
-    }
+        --b: 15px;   /* thickness of the border */
+    --w: 13rem; /* width of border */
+    padding-right: 2rem;
+    }   
   
     .left-section-about {
         flex: 1; /* Occupy full width */
@@ -143,6 +146,7 @@
         text-align: justify;
         letter-spacing: 1px;
         font-weight: 400;
+        margin-right:  2rem;
     }
   
     .heading {
